@@ -1,5 +1,6 @@
 using EntityFramework.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,3 +32,9 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+/*
+dotnet aspnet-codegenerator razorpage -m EntityFramework.Models.Article -dc EntityFramework.Models.MyBlogContext -udl -outDir Pages/Blog  --referenceScriptLibraries
+dotnet aspnet-codegenerator razorpage -m Article -dc ArticleContext -udl -outDir Pages/Blog --referenceScriptLibraries
+
+*/

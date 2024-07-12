@@ -4,7 +4,7 @@ using NuGet.Common;
 
 namespace EntityFramework.Models
 {
-    // [Table("post")]
+    // [Table("post")] EntityFramework.Models.Article
     public class Article
     {
         [Key]

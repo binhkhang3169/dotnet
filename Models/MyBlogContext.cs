@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EntityFramework.Models
 {
+    // d
     public class MyBlogContext : DbContext
     {
         public MyBlogContext(DbContextOptions<MyBlogContext> options) : base(options)
